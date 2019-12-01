@@ -1,0 +1,56 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:unicorn/recommended",
+    "plugin:import/recommended"
+  ],
+  "plugins": [
+    "babel",
+    "import",
+    "unicorn",
+    "module-resolver"
+  ],
+  "globals": {
+    "fetch": false,
+    "__DEV__": false,
+    "FormData": false,
+    "requestAnimationFrame": false
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "rules": {
+    "func-names": ["error", "never"],
+    "class-methods-use-this": 0,
+    "global-require": 0,
+    "no-console": 0,
+    "no-shadow": 0,
+    "camelcase": 0,
+    "import/prefer-default-export": 0,
+    "comma-dangle": ["error", "always-multiline"],
+    "no-underscore-dangle": ["error", {
+      "allow": ["_root", "_class"]
+    }],
+    "function-paren-newline": 0,
+    "lines-between-class-members": 0,
+    "unicorn/explicit-length-check": 0,
+    "unicorn/filename-case": 0,
+    "unicorn/new-for-builtins": 0,
+    "unicorn/no-unused-properties": 0,
+    "unicorn/prefer-type-error": 0,
+    "unicorn/prevent-abbreviations": 0,
+    "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
+    "implicit-arrow-linebreak": 0,
+    "semi": ["warn", "never"],
+    "no-restricted-syntax": 0,
+    "import/no-extraneous-dependencies": ["warn", {"devDependencies": false}]
+  }
+}
