@@ -31,7 +31,7 @@
     "release": "npm test && webpack --config=build/webpack.app.config.js --env=production && electron-builder"
   },
   "dependencies": {
-    "electron": "^4.0.0",
+    "electron": "^9.1.0",
     "@tensorflow/tfjs-node": "^1.3.2",
     "brightness": "^3.0.0",
     "face-api.js": "^0.21.0",
